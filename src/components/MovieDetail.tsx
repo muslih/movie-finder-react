@@ -38,7 +38,6 @@ const MovieDetail: React.FC<RouteComponentProps<IMovieDetail>> = ({imdbid}) => {
   const [isLoading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [movieData, setMovieData] =  useState(null) ;
-  console.log(imdbid)
   React.useEffect( ()=>{
     getMovieDetail(imdbid)
     .then(response => {
