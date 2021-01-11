@@ -29,7 +29,7 @@ const Movie = ({movie}: {movie: IMovie}) => {
             <br/>
             IMDB ID: {imdbID}
           </p>
-          <a className="button" href="./movies/{imdbID}">View Detail</a>
+          <a className="button" href={`./movies/${imdbID}`}>View Detail</a>
           </div>
         </div>
       </div>
