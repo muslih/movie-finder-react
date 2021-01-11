@@ -15,8 +15,8 @@ const Routes = () => {
     <Router>
       <Route path="/" component={HomePage} />
       <Route path="/movies/:imdbid" component={MovieDetail} />
-      <Route path="movie-finder-react/" component={HomePage} />
-      <Route path="movie-finder-react/movies/:imdbid" component={MovieDetail} />
+      <Route path="/movie-finder-react/" component={HomePage} />
+      <Route path="/movie-finder-react/movies/:imdbid" component={MovieDetail} />
     </Router>
   );
 };
