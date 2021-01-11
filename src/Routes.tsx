@@ -13,6 +13,8 @@ const Route: FunctionComponent<Props> = ({ component: Component, ...rest }) => (
 const Routes = () => {
   return (
     <Router>
+      <Route path="/" component={HomePage} />
+      <Route path="/movies/:imdbid" component={MovieDetail} />
       <Route path="movie-finder-react/" component={HomePage} />
       <Route path="movie-finder-react/movies/:imdbid" component={MovieDetail} />
     </Router>
